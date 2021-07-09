@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+        @keyframes animation1 {
+            0%{
+                top: 175px;
+                left: 0px;
+                background-color: black;
+            }
+            24.5%{
+                background-color: red;
+            }
+            25%{
+                top: 350px;
+                left: 1250px;
+                background-color: black;
+            }
+
+            50%{
+                top: 175px;
+                left: 1450px;
+                background-color: black;
+            }
+            74.5%{
+                background-color: red;
+            }
+            75%{
+                top: 350px;
+                left: 200px;
+                background-color: black;
+            }
+            99.999%{
+                top:175px;
+                left: 0px;
+                background-color: black;
+            }
+            100%{
+                top: 175px;
+                left: 0px;
+                background-color: black;
+            }
+        }
+      
+        .ball{
+            width: 50px;
+            height: 50px;
+            /* background-image: linear-gradient(black,red); */
+            background-color: black;
+            border-radius: 25px;
+
+            position:relative;
+            animation: animation1 1.5s infinite;
+            animation-play-state: running;
+        }
+        .left{
+            animation: coloring 1.5s infinite;
+            animation-play-state: running;
+        }
+
+        .box{
+            width: 1500px;
+            height: 500px;
+            margin: 0px auto;
+            background-color: lightgray;
+            display: flex;
+        }
+        .box1{
+            width: 1500px;
+            height: 400px;
+            margin: 0px auto;
+            background-color: lightgray;
+            display: flex;
+        }
+      
+        .left{
+            width: 49%;
+            background-color: rgb(170, 160, 152);
+        }
+        .center{
+            width: 2%;
+            height: 550px;
+            background-color: black;
+            position:relative;
+            top: -50px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .right{
+            width: 49%;
+            background-color: rgb(170, 160, 152);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">        
+        <div class="ball">
+
+        </div>
+    </div>
+    <div class="box">
+        <div class="left">
+
+        </div>
+        <div class="center">
+
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+</body>
+</html>
